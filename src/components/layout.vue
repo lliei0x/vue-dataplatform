@@ -22,7 +22,7 @@
     </div>
 
     <my-dialog :isShow="isShowLognDialog" @on-close="closeDialog('isShowLognDialog')">
-      <logn-form></logn-form>
+      <login-form></login-form>
     </my-dialog>
 
     <my-dialog :isShow="isShowRegDialog" @on-close="closeDialog('isShowRegDialog')">
@@ -37,12 +37,12 @@
 
 <script>
 import Dialog from './dialog'
-import LognForm from './lognForm'
+import LoginForm from './loginForm'
 import RegForm from './regForm'
 export default {
   components: {
     MyDialog: Dialog,
-    LognForm,
+    LoginForm,
     RegForm
   },
   data () {
