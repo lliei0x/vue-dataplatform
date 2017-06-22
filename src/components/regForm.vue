@@ -27,38 +27,38 @@ export default {
 
     }
   },
-  // computed: {
-  //   userErrors () {
-  //     let status, errorText
-  //     if (!/@/g.test(this.usernameModel)) {
-  //       status = false
-  //       errorText = '必须包含@'
-  //     }
-  //     else {
-  //       status = true
-  //       errorText = ''
-  //     }
-  //     return {
-  //       status,
-  //       errorText
-  //     }
-  //   },
-  //   passwordErrors () {
-  //     let status, errorText
-  //     if (!/@/g.test(this.usernameModel)) {
-  //       status = false
-  //       errorText = '必须包含@'
-  //     }
-  //     else {
-  //       status = true
-  //       errorText = ''
-  //     }
-  //     return {
-  //       status,
-  //       errorText
-  //     }
-  //   }
-  // },
+  computed: {
+    userErrors () {
+      let status, errorText
+      if (!/@/g.test(this.usernameModel)) {
+        status = false
+        errorText = '必须包含@'
+      }
+      else {
+        status = true
+        errorText = ''
+      }
+      return {
+        status,
+        errorText
+      }
+    },
+    passwordErrors () {
+      let status, errorText
+      if (!/@/g.test(this.usernameModel)) {
+        status = false
+        errorText = '必须包含@'
+      }
+      else {
+        status = true
+        errorText = ''
+      }
+      return {
+        status,
+        errorText
+      }
+    }
+  },
   methods: {
     closeMyself () {
       this.$emit('on-close')
