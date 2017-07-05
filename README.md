@@ -1,6 +1,8 @@
-# vuedemo1
+# vue-dataplatfrom
 
 > A Vue.js project
+>
+> vue2 + vue-router + vuex 构建一个数据平台
 
 ## Build Setup
 
@@ -18,4 +20,14 @@ npm run build
 npm run build --report
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 技术栈
+
+### 首页
+
+|   模块   |            技术            |
+| :----: | :----------------------: |
+|  产品列表  |       layout底层布局实现       |
+|  新闻列表  |           列表渲染           |
+|  幻灯片   | 通过vue-resource获取数据，幻灯片组件 |
+| 登陆注册弹窗 |           弹窗组件           |
+
